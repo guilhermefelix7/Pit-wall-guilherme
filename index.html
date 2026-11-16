@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PITWALL - GP de São Paulo</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>PIT<span>WALL</span></h2>
+
+        <ul>
+            <li><a href="#pilotos">Pilotos</a></li>
+            <li><a href="#classificacao">Classificação</a></li>
+            <li><a href="#ingressos">Ingressos</a></li>
+        </ul>
+
+        <a href="#ingressos" class="botao">Comprar ingresso</a>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+            <div class="inicio-texto">
+                <p>Autódromo de Interlagos - Novembro de 2026</p>
+
+                <h1>GP DE<br><span>SÃO PAULO</span></h1>
+
+                <p>
+                    71 Voltas, 22 carrros no grid e a torcida brasileira empurrando o Bortoleto na reta.
+                </p>
+
+                <a href="#ingressos">Garantir meu lugar</a>
+                <a href="#classificacao">Ver classificação</a>
+            </div>
+
+            <div class="inicio-imagem">
+             <div>
+                 <h2>71</h2>
+                 <p>Voltas</p>
+                 </div>
+
+                 <div>
+                    <h2>4.309</h2>
+                    <p>KM POR VOLTA</p>
+                 </div>
+                 
+                 <div>
+                    <h2>15</h2>
+                    <p>CURVAS</p>
+                 </div>
+                 </div>
+        </section>
+
+       <section id="pilotos">
+    <h2>01 GRID DE PILOTOS</h2>
+
+    <div class="grid-pilotos">
+
+        <div class="piloto vermelho">
+            <h3>16</h3>
+            <p>CHARLES <strong>LECLERC</strong></p>
+            <small>Ferrari</small>
+        </div>
+
+        <div class="piloto laranja">
+            <h3>81</h3>
+            <p>OSCAR <strong>PIASTRI</strong></p>
+            <small>McLaren</small>
+        </div>
+
+        <div class="piloto verde">
+            <h3>63</h3>
+            <p>GEORGE <strong>RUSSELL</strong></p>
+            <small>Mercedes</small>
+        </div>
+
+        <div class="piloto cinza">
+            <h3>5</h3>
+            <p>GABRIEL <strong>BORTOLETO</strong></p>
+            <small>Audi</small>
+        </div>
+
+    </div>
+</section>
+
+       <section id="classificacao">
+    <h2>02 CLASSIFICAÇÃO</h2>
+
+
+<div class="filtros-classificacao">
+
+    <div>
+        <label for="buscarPiloto">BUSCAR PILOTO</label>
+        <input type="text" id="buscarPiloto" placeholder="Nome ou equipe...">
+    </div>
+
+    <div>
+        <label for="filtroEquipe">EQUIPE</label>
+        <select id="filtroEquipe">
+            <option value="">Todas as equipes</option>
+            <option value="McLaren">McLaren</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+        </select>
+    </div>
+
+    <button type="button" id="btnFiltrar">FILTRAR</button>
+    
+
+</div>
+
+    <div class="tabela-classificacao">
+
+        <table>
+            <tr>
+                <th>POS.</th>
+                <th>PILOTO</th>
+                <th>EQUIPE</th>
+                <th>VITÓRIAS</th>
+                <th>DIFERENÇA</th>
+                <th>PONTOS</th>
+            </tr>
+
+            <tr class="lider">
+                <td>1</td>
+                <td>Oscar Piastri</td>
+                <td>McLaren</td>
+                <td>6</td>
+                <td>LÍDER</td>
+                <td><strong>366</strong></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Charles Leclerc</td>
+                <td>Ferrari</td>
+                <td>5</td>
+                <td>-18</td>
+                <td><strong>348</strong></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>George Russell</td>
+                <td>Mercedes</td>
+                <td>4</td>
+                <td>-41</td>
+                <td><strong>325</strong></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Gabriel Bortoleto</td>
+                <td>Audi</td>
+                <td>0</td>
+                <td>-298</td>
+                <td><strong>68</strong></td>
+            </tr>
+        </table>
+
+    </div>
+</section>
+
+        <section id="ingressos">
+    <div class="ingressos-container">
+
+        <div class="precos">
+            <h2>03 INGRESSOS</h2>
+
+            <p>Escolha o setor e venha ver a decisão do título de perto.</p>
+
+            <div class="aviso">
+                Últimos 120 lugares no Setor da Reta!
+            </div>
+
+            <div class="preco">
+                <span>Arquibancada A</span>
+                <strong>R$ 480</strong>
+            </div>
+
+            <div class="preco">
+                <span>Setor da Reta</span>
+                <strong>R$ 890</strong>
+            </div>
+
+            <div class="preco">
+                <span>Box VIP</span>
+                <strong>R$ 2.400</strong>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <form>
+
+                <div class="campos">
+                    <div>
+                        <label>Nome completo</label>
+                        <input type="text" placeholder="Como está no documento">
+                    </div>
+
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" placeholder="voce@email.com">
+                    </div>
+
+                    <div>
+                        <label>Setor</label>
+                        <select>
+                            <option>Escolha o setor</option>
+                            <option>Arquibancada A</option>
+                            <option>Setor da Reta</option>
+                            <option>Box VIP</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Dia</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label>Ingressos</label>
+                        <input type="number" min="1" max="6" value="2">
+                        <small>Até 6 por pessoa.</small>
+                    </div>
+
+                    <div>
+                        <label>Seu perfil (opcional)</label>
+                        <input type="url" placeholder="https://instagram.com/...">
+                    </div>
+                </div>
+
+                <label>Foto da torcida para o telão</label>
+                <input type="file" accept="image/png, image/jpeg">
+
+                <small>JPG ou PNG - a melhor foto aparece no telão da reta!</small>
+
+                <label>Recado para o seu piloto</label>
+                <textarea rows="4" placeholder="Vai, Bortoleto! Interlagos é sua casa..."></textarea>
+
+                <button type="submit">Reservar ingressos</button>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <p>PITWALL - Projeto de estudo de HTML e CSS</p>
+    <p>Desenvolvido por: Guilherme Felix Milano</p>
+</footer>
+
+
+<script>
+    const buscarPiloto = document.getElementById("buscarPiloto");
+    const filtroEquipe = document.getElementById("filtroEquipe");
+    const btnFiltrar = document.getElementById("btnFiltrar");
+
+    btnFiltrar.addEventListener("click", function() {
+
+        const pesquisa = buscarPiloto.value.toLowerCase();
+        const equipe = filtroEquipe.value;
+
+        const linhas = document.querySelectorAll(".tabela-classificacao tr");
+
+        linhas.forEach(function(linha, indice) {
+
+            if (indice === 0) {
+                return;
+            }
+
+            const piloto = linha.cells[1].textContent.toLowerCase();
+            const nomeEquipe = linha.cells[2].textContent;
+
+            const encontrouPiloto = piloto.includes(pesquisa);
+            const encontrouEquipe = equipe === "" || nomeEquipe === equipe;
+
+            if (encontrouPiloto && encontrouEquipe) {
+                linha.style.display = "";
+            } else {
+                linha.style.display = "none";
+            }
+
+        });
+        
+    });
+
+buscarPiloto.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        btnFiltrar.click();
+    }
+});
+
+</script>
+
+</body>
+</html>
